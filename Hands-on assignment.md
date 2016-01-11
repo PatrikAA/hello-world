@@ -82,6 +82,10 @@ To suppress the drawing of the axis use plot(... , xaxt = "n"). Then call axis()
 
 > lines(rom$Year,rom$FiAbs,type="l",col="blue")
 
+# I also added a legend:
+
+> legend(1820,9500,legend=c("Roman","Romaani"),col=c("red","blue"),lty=1)
+
 # So my whole code ended up looking like this:
 
 > plot(rom$Year,rom$SvAbs,main="The word 'roman' in the Swedish-language press and \nthe word 'romaani' in the Finnish-language press 1820-1909",ylim=c(0,10000),type="l",col="red",xlab="Year",ylab="Frequency",las=2)
@@ -94,13 +98,13 @@ To suppress the drawing of the axis use plot(... , xaxt = "n"). Then call axis()
 
 > lines(rom$Year,rom$FiAbs,type="l",col="blue")
 
-# I also added a legend:
-
 > legend(1820,9500,legend=c("Roman","Romaani"),col=c("red","blue"),lty=1)
 
 # Finally, I printed the plot with the following command: 
 
 > dev.print(pdf,"filename.pdf")
+
+# PLEASE NOTE: Since I couldn't figure out how to upload images to GitHub, I haven't attached the final graph itself. You should nevertheless be able to re-create the graph by using the csv-file and the code above.
 
 # INTERPRETATION
 
