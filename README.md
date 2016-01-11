@@ -102,7 +102,47 @@ To suppress the drawing of the axis use plot(... , xaxt = "n"). Then call axis()
 
 > dev.print(pdf,"filename.pdf")
 
+# INTERPRETATION
 
+# Does this graph actually tell us anything interesting, then? Well, it mostly tells us that the word ”romaani” entered Finnish-language newspapers somewhat later than the word ”roman” entered Swedish-language newspapers. In the Finnish-language newspapers, the word ”romaani” started to be used in the 1880s – before that it was more or less nonexistent. In the Swedish-language newspapers, however, the word has been used consistently (more than 100 times per year) since at least the 1840s.
+
+# More surprisingly: after the year 1905 the absolute frequency of the word ”romaani” in the Finnish newspapers rises sharphly. It is hard to say what lies behind this development, but there are at least a couple of historical factors one can point to. First, as Toivo Nygård points out in Suomen lehdistön historia 2 (1987), the Finnish press expanded strongly in the years 1905–1908. After the parliamentary reform in 1906, the political parties were eager to reach out to the public. This resulted in a multitude of new newspapers, especially Finnish-language newspapers. (Toivo Nygård, ”Sanomalehdistön yleispiirteet 1906–1917”, Päiviö Tommila (päätomittaja), Suomen lehdistön historia 2 : sanomalehdistö suurlakosta talvisotaan, Kustannuskiila Oy, Kuopio 1987, s. 16.) This drastic expansion is also reflected in the newspaper corpus itself:
+
+# Finnish-language newspapers in Korp: number of tokens per year
+
+# Year    Number of tokens
+# 1909      258,643,730 
+# 1908      249,949,036 
+# 1907      233,414,790 
+# 1906      202,405,976 
+# 1905      152,047,147 
+# 1904      124,892,321 
+# 1903      123,835,330
+# 1902      110,773,624 
+# 1901      114,239,738 
+# 1900      126,352,523 
+
+# Also, as we can see in Korp, the Swedish-language press didn't grow nearly as much: from 78 million tokens in 1900 to 90 million in 1909.
+
+# Another probable reason for the increased frequency of the word ”romaani” are the commercials. As a quick glance at the search results in Korp will tell you, many – if not most – hits are from bookstore and publisher commercials. And as Nygård points out, the amount of commercials published in newspapers also increased in 1906: ”Lähes kaikissa lehdissä kaupallisiin ilmoituksiin myyty tekstiala kasvoi vuodesta 1906 vuoteen 1910. Tämän jälkeen kehitys taittui laskuun.” (Nygård 1987, s. 142.)
+
+# These two factors – an increased amount of newspapers and an increased amount of commercials (which, of course, were reprinted many times in many different newspapers) – might explain why the word ”romaani” becomes so frequent in Finnish newspapers after 1905.
+
+# FINAL REMARKS
+
+# There are some caveats to this study that should be pointed out.
+
+# First, the OCR of the newspapers in the National Digital Library is far from perfect. This means that a search for ”romaani” will not find all the occurences of the word in the corpus. Second, the lemmatization has been done automatically, by machine, which means that there are mistakes. For example, a search for the baseform ”romaani” also returns the following hits:
+
+# "Tawallisesti kun puhutaan amerilalaisista tarkoitetaan niillä Pohjois-Nmerikan anglosak » silaista r « wa ja tiekin muistetaan että koto Etelä^Amerita ja osa pohjoisesta » kin on toista heimoa , nimittäin romaanilaista, espanjalaisia ja portugalilaisia."
+
+# "Ensimmäiseen luuluu : itämainen kirjallisuus , klassillinen kirjallisuus , manha kristillinen ja ja keskiajan latinankielinen lirjallisuus ; toiseen osaan : romaanilainen lirjallisuus ( Italia , Espansa , Portugali , Ranska , Nnmania ) ; kolmanteen osaan : germamlaincn kirjallisuus ( Englanti , Alankomaat , Belgia , Salsa , Skandinamilaiset maat ) , suomalainen lirjallisuus -a muiden Euroopan kansojen lirjallisnus ."
+
+# Because of these factors, the results of this study should be taken with a grain of salt. While the general trend shown in the graph is most likely true, the frequencies that the graph is based on should be thought of as approximate rather than exact.
+
+# It should also be pointed out that the corpus doesn't include all Finnish newspapers from 1820–1909. The newspaper collection of the National Library is not complete: some numbers of some journals are missing. This is not likely to change the big picture, but it still needs to be pointed out.
+
+# Finally, while absolute frequencies are interesting in themselves, relative frequencies can be even more interesting. Absolute frequencies can tell us when a word first appears in a corpus, and give us a rough idea of how common it has been at certain points in time. However, when comparing different corpora of different sizes (such as the Finnish-language newspaper corpus and the Swedish-language newspaper corpus) it makes more sense to study relative frequencies. 
 
 
 
