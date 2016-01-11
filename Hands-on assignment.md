@@ -1,5 +1,7 @@
 # Hands-on assignment
 
+This was an assignement done on the course Introduction to digital humanities at the University of Helsinki, Autumn 2015.
+
 # THE TASK
 
 #I wanted to find out how frequent the words 'roman' and 'romaani' have been in the Swedish-language and Finnish-language press, respectively, during the years 1820–1909.
