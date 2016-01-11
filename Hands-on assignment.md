@@ -2,11 +2,11 @@
 
 This was an assignement done on the course Introduction to digital humanities at the University of Helsinki, Autumn 2015.
 
-# THE TASK
+THE TASK
 
-#I wanted to find out how frequent the words 'roman' and 'romaani' have been in the Swedish-language and Finnish-language press, respectively, during the years 1820–1909.
+I wanted to find out how frequent the words 'roman' and 'romaani' have been in the Swedish-language and Finnish-language press, respectively, during the years 1820–1909.
 
-# THE DATASET
+THE DATASET
 
 # Since I wanted to find out how frequent the words 'roman' and 'romaani' have been in the Finnish press, I chose the Finnish newspapers digitized by the National Library as my dataset. I first tried to get the data I needed by using Jupyter and the Korp API, as we did on the lectures. For one reason or another, however, I couldn't get the code to work. Not wanting to disturb our dear teachers with my incompetence, I then decided to simply use the Korp GUI – which, as far as I can tell, is more than servicable enough if you simply want to compare the frequency of two words. 
 
